@@ -4,6 +4,7 @@
 
     <arg name="tab-width" value="4"/>
     <arg name="report-width" value="160"/>
+    <arg name="encoding" value="utf-8"/>
     
     <rule ref="PSR1"/>
     <rule ref="PSR2"/>
