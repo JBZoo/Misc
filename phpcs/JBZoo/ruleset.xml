@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<ruleset name="JBZoo">
+    <description>The JBZoo coding standard (PSR1 + PSR2 + minor fixes).</description>
+</ruleset>
