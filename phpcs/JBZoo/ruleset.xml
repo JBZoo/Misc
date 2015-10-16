@@ -3,6 +3,8 @@
     <description>The JBZoo coding standard (PSR1 + PSR2 + minor fixes).</description>
 
     <arg name="tab-width" value="4"/>
+    <arg name="report-width" value="160"/>
+    
     <rule ref="PSR1"/>
     <rule ref="PSR2"/>
 
