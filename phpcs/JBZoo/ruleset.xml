@@ -15,5 +15,9 @@
             <property name="absoluteLineLimit" value="120"/>
         </properties>
     </rule>
+    
+    <rule ref="PEAR.NamingConventions.ValidFunctionName"/>
+
+    <rule ref="PEAR.NamingConventions.ValidVariableName"/>
 
 </ruleset>
