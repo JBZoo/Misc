@@ -19,11 +19,5 @@
     <rule ref="PEAR.NamingConventions.ValidFunctionName"/>
 
     <rule ref="PEAR.NamingConventions.ValidVariableName"/>
-    
-    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
-        <properties>
-            <property name="spacing" value="1"/>
-        </properties>
-    </rule>    
 
 </ruleset>
