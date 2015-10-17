@@ -3,5 +3,7 @@
 
 Call PHP CS
 ```
-phpcs --standard=/w/projects/git/JBZoo-Misc/public_html/phpcs/JBZoo/ruleset.xml --report-width=160 ./src/
+mkdir -p /w/tmp/phpcs/
+curl -sS https://raw.githubusercontent.com/JBZoo/Misc/master/phpcs/JBZoo/ruleset.xml > /w/tmp/phpcs/ruleset.xml
+phpcs --standard=/w/tmp/phpcs/ruleset.xml ./src/
 ```
