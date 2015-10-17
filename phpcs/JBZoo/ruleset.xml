@@ -2,12 +2,17 @@
 <ruleset name="JBZoo">
     <description>The JBZoo coding standard (PSR1 + PSR2 + minor fixes).</description>
 
+    <exclude-pattern>*/tests/*</exclude-pattern>
+
     <arg name="tab-width" value="4"/>
     <arg name="report-width" value="160"/>
     <arg name="encoding" value="utf-8"/>
     
     <rule ref="PSR1"/>
-    <rule ref="PSR2"/>
+    <rule ref="PSR2">
+        <exclude name="PSR2.Sniffs.Classes.PropertyDeclaration"/>
+        <exclude name="PSR2.Classes.PropertyDeclaration"/>
+    </rule>
 
     <rule ref="Generic.Files.LineLength">
         <properties>
