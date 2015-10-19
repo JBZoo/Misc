@@ -7,10 +7,6 @@
     <arg name="tab-width" value="4"/>
     <arg name="report-width" value="auto"/>
     <arg name="encoding" value="utf-8"/>
-    <arg name="show_warnings" value="1"/>
-    <arg name="show_errors" value="1"/>
-    <arg name="ignore_errors_on_exit" value="0"/>
-    <arg name="ignore_warnings_on_exit" value="0"/>
 
     <rule ref="PSR2">
         <exclude name="PSR2.Classes.PropertyDeclaration"/>        
