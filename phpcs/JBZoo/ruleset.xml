@@ -9,6 +9,7 @@
     <exclude-pattern type="relative">tests/*</exclude-pattern>
     <exclude-pattern type="relative">test.php</exclude-pattern>
     <exclude-pattern type="relative">demo.php</exclude-pattern>
+    <exclude-pattern type="relative">composer-cleanup</exclude-pattern>
 
     <!-- User PSR2(+PSR1) code standarts -->
     <rule ref="PSR2">
