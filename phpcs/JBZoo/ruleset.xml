@@ -5,26 +5,34 @@
     <arg name="tab-width" value="4"/>
     <arg name="report-width" value="160"/>
     <arg name="encoding" value="utf-8"/>
-    
+
     <exclude-pattern type="relative">tests/*</exclude-pattern>
     <exclude-pattern type="relative">test.php</exclude-pattern>
-    <exclude-pattern type="relative">demo.php</exclude-pattern>    
+    <exclude-pattern type="relative">demo.php</exclude-pattern>
 
+    <!-- User PSR2(+PSR1) code standarts -->
     <rule ref="PSR2">
-        <exclude name="PSR2.Classes.PropertyDeclaration"/>        
+        <exclude name="PSR2.Classes.PropertyDeclaration"/>
         <exclude name="PSR2.Methods.MethodDeclaration"/>
         <exclude name="PEAR.NamingConventions.ValidVariableName"/>
         <exclude name="PEAR.NamingConventions.ValidFunctionName"/>
     </rule>
 
+    <!-- Max line length is 120 chars -->
     <rule ref="Generic.Files.LineLength">
         <properties>
             <property name="lineLimit" value="120"/>
             <property name="absoluteLineLimit" value="120"/>
         </properties>
     </rule>
-    
-    <rule ref="Zend.NamingConventions.ValidVariableName"/>
-    <rule ref="Squiz.NamingConventions.ValidFunctionName"/>    
+
+    <!--
+        Overload excluded from PSR2 tests.
+        private/protected method/variables must be prefixed with an underscore
+    -->
+    <rule ref="JBZoo.Classes.PropertyDeclaration"/>
+    <rule ref="JBZoo.Methods.MethodDeclaration"/>
+    <rule ref="JBZoo.NamingConventions.ValidVariableName"/>
+    <rule ref="JBZoo.NamingConventions.ValidFunctionName"/>
 
 </ruleset>
