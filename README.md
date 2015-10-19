@@ -3,7 +3,7 @@
 
 Call PHP CS
 ```
-mkdir -p /w/tmp/phpcs/
-curl -sS https://raw.githubusercontent.com/JBZoo/Misc/master/phpcs/JBZoo/ruleset.xml > /w/tmp/phpcs/ruleset.xml
-phpcs --standard=/w/tmp/phpcs/ruleset.xml ./src/
+mkdir -p build/misc
+git clone --branch=master https://github.com/JBZoo/Misc.git build/misc;
+php vendor/bin/phpcs ./src --standard=build/misc/phpcs/JBZoo/ruleset.xml --report=full;
 ```
