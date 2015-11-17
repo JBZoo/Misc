@@ -28,7 +28,12 @@
             <property name="minimum" value="300"/>
         </properties>
     </rule>
-    <rule ref="rulesets/codesize.xml/ExcessiveMethodLength"/>
+    <rule ref="rulesets/codesize.xml/ExcessiveMethodLength">
+        <properties>
+            <property name="minimum" value="120"/>
+            <property name="ignore-whitespace" value="false"/>
+        </properties>
+    </rule>
     <rule ref="rulesets/codesize.xml/ExcessiveClassLength"/>
     <rule ref="rulesets/codesize.xml/ExcessiveParameterList"/>
     <rule ref="rulesets/codesize.xml/ExcessivePublicCount">
