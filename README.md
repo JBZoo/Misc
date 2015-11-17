@@ -1,7 +1,7 @@
 # Misc
 
 
-Call PHPCS in the ".travis.yml"
+Examples
 ```bash
 mkdir -p build/misc
 git clone --branch=master https://github.com/JBZoo/Misc.git build/misc
