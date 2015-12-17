@@ -4,7 +4,6 @@
     "description"       : "Some stuff for testig",
     "license"           : "MIT",
     "keywords"          : ["phpunit", "jbzoo", "aliases", "short-syntax", "testing"],
-    "minimum-stability" : "dev",
     "authors"           : [
         {
             "name"  : "SmetDenis",
