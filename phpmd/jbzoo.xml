@@ -10,9 +10,10 @@
     <!-- ********************************************************************* CLEAN CODE ************************** -->
     <!--
     <rule ref="rulesets/cleancode.xml/BooleanArgumentFlag"/>
-    <rule ref="rulesets/cleancode.xml/ElseExpression"/>
+    
     <rule ref="rulesets/cleancode.xml/StaticAccess"/>
     -->
+    <rule ref="rulesets/cleancode.xml/ElseExpression"/>
 
 
     <!-- ********************************************************************* CODE SIZE *************************** -->
