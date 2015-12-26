@@ -140,13 +140,18 @@ class JBZoo_Sniffs_NamingConventions_ValidFunctionNameSniff extends PHP_CodeSnif
         }
 
         // If it's not a private method, it must not have an underscore on the front.
-        if ($isPublic === true && $scopeSpecified === true && $methodName{0} === '_') {
+        if (
+            ($isPublic === true && $scopeSpecified === true && $methodName{0} === '_')
+            && !($isPublic === true && $methodName === '_')
+        ) {
             $error = '%s method name "%s" must not be prefixed with an underscore';
             $data  = array(
                 ucfirst($scope),
                 $errorData[0],
             );
+
             $phpcsFile->addError($error, $stackPtr, 'PublicUnderscore', $data);
+
             return;
         }
 
@@ -160,7 +165,9 @@ class JBZoo_Sniffs_NamingConventions_ValidFunctionNameSniff extends PHP_CodeSnif
             $testMethodName = substr($methodName, 1);
         }
 
-        if (PHP_CodeSniffer::isCamelCaps($testMethodName, false, $isPublic, false) === false) {
+        if ($methodName !== '_'
+            && PHP_CodeSniffer::isCamelCaps($testMethodName, false, $isPublic, false) === false
+        ) {
             if ($scopeSpecified === true) {
                 $error = '%s method name "%s" is not in camel caps format';
                 $data  = array(

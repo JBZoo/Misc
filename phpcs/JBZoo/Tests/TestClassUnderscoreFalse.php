@@ -70,4 +70,23 @@ class TestClassUnderscoreFalse
     {
         return '';
     }
+
+    /**
+     * @param string $value
+     * @return string
+     */
+    protected function _($value = '')
+    {
+        return $value;
+    }
+
+    /**
+     * @param string $value
+     * @return string
+     */
+    private function _1($value = '')
+    {
+        return $value;
+    }
+
 }

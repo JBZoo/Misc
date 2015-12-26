@@ -70,4 +70,13 @@ class TestClassUnderscoreTrue
     {
         return '';
     }
+
+    /**
+     * @param string $value
+     * @return string
+     */
+    public function _($value = '')
+    {
+        return $value;
+    }
 }

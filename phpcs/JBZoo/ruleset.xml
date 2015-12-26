@@ -13,6 +13,7 @@
 
     <!-- User PSR2(+PSR1) code standarts -->
     <rule ref="PSR2">
+        <exclude name="PSR1.Methods.CamelCapsMethodName"/>
         <exclude name="PSR2.Classes.PropertyDeclaration"/>
         <exclude name="PSR2.Methods.MethodDeclaration"/>
         <exclude name="PEAR.NamingConventions.ValidVariableName"/>
@@ -33,6 +34,7 @@
     -->
     <rule ref="JBZoo.Classes.PropertyDeclaration"/>
     <rule ref="JBZoo.Methods.MethodDeclaration"/>
+    <rule ref="JBZoo.Methods.CamelCapsMethodName"/>
     <rule ref="JBZoo.NamingConventions.ValidVariableName"/>
     <rule ref="JBZoo.NamingConventions.ValidFunctionName"/>
 
