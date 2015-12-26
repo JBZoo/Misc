@@ -75,7 +75,7 @@ class TestClassUnderscoreFalse
      * @param string $value
      * @return string
      */
-    protected function _($value = '')
+    protected function _protected($value = '') // rename to _
     {
         return $value;
     }
@@ -84,7 +84,7 @@ class TestClassUnderscoreFalse
      * @param string $value
      * @return string
      */
-    private function _1($value = '')
+    private function _private($value = '') // rename to _
     {
         return $value;
     }
