@@ -77,7 +77,6 @@ class JBZoo_Sniffs_NamingConventions_ValidVariableNameSniff extends PHP_CodeSnif
                 ucfirst($scope),
                 $memberName,
             );
-            var_dump($scope);
 
             $phpcsFile->addError($error, $stackPtr, 'PublicUnderscore', $data);
             return;
