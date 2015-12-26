@@ -87,9 +87,18 @@
 
 
     <!-- ********************************************************************* NAMING ****************************** -->
-    <rule ref="rulesets/naming.xml/ShortVariable"/>
+    <rule ref="rulesets/naming.xml/ShortVariable">
+        <properties>
+            <property name="minimum" value="2"/>
+        </properties>
+    </rule>
     <rule ref="rulesets/naming.xml/LongVariable"/>
-    <rule ref="rulesets/naming.xml/ShortMethodName"/>
+    <rule ref="rulesets/naming.xml/ShortMethodName">
+        <properties>
+            <property name="minimum" value="3"/>
+            <property name="exceptions" value="_"/>
+        </properties>
+    </rule>
     <rule ref="rulesets/naming.xml/ConstructorWithNameAsEnclosingClass"/>
     <rule ref="rulesets/naming.xml/ConstantNamingConventions"/>
     <rule ref="rulesets/naming.xml/BooleanGetMethodName"/>
@@ -102,5 +111,5 @@
     <!--
     <rule ref="rulesets/unusedcode.xml/UnusedPrivateMethod"/>
     -->
-    
+
 </ruleset>
