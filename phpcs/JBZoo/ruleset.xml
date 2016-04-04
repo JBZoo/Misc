@@ -18,6 +18,7 @@
         <exclude name="PSR2.Methods.MethodDeclaration"/>
         <exclude name="PEAR.NamingConventions.ValidVariableName"/>
         <exclude name="PEAR.NamingConventions.ValidFunctionName"/>
+        <exclude name="Squiz.WhiteSpace.ControlStructureSpacing"/> <!-- but LineAfterClose, NoLineAfterClose -->
     </rule>
 
     <!-- Max line length is 120 chars -->
@@ -37,5 +38,7 @@
     <rule ref="JBZoo.Methods.CamelCapsMethodName"/>
     <rule ref="JBZoo.NamingConventions.ValidVariableName"/>
     <rule ref="JBZoo.NamingConventions.ValidFunctionName"/>
+    <rule ref="Squiz.WhiteSpace.ControlStructureSpacing.LineAfterClose"/>
+    <rule ref="Squiz.WhiteSpace.ControlStructureSpacing.NoLineAfterClose"/>
 
 </ruleset>
