@@ -6,6 +6,9 @@
          xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
 
     <description>This file is part of the JBZoo CCK package.</description>
+    
+    <exclude-pattern>*vendor*</exclude-pattern>
+    <exclude-pattern>vendor</exclude-pattern>
 
     <!-- ********************************************************************* CLEAN CODE ************************** -->
     <!--
