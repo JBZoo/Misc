@@ -13,6 +13,13 @@
     
     <exclude-pattern type="relative">vendor</exclude-pattern>
     <exclude-pattern>*/vendor/*</exclude-pattern>
+    
+    <!-- Custom packages -->
+    <exclude-pattern>*/symfony/*</exclude-pattern>
+    <exclude-pattern>*/oyejorge/*</exclude-pattern>
+    <exclude-pattern>*/composer/*</exclude-pattern>
+    <exclude-pattern>*/pimple/*</exclude-pattern>
+    <exclude-pattern>*/jbdump/*</exclude-pattern>
 
     <!-- User PSR2(+PSR1) code standarts -->
     <rule ref="PSR2">
