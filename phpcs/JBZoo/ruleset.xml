@@ -13,8 +13,10 @@
     
     <exclude-pattern type="relative">vendor</exclude-pattern>
     <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern type="relative">libraries</exclude-pattern>
+    <exclude-pattern>*/libraries/*</exclude-pattern>    
     
-    <!-- Custom packages -->
+    <!-- Custom packages (experimental) -->
     <exclude-pattern type="relative">src/cck/libraries/symfony/*</exclude-pattern>
     <exclude-pattern type="relative">src/cck/libraries/oyejorge/*</exclude-pattern>
     <exclude-pattern type="relative">src/cck/libraries/composer/*</exclude-pattern>
